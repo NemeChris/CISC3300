@@ -12,7 +12,7 @@ Tags act like containers, with opening and closing components, transforming the 
 Attributes provide additional information about the contents of an element, appearing inside the opening tag of an element and comprising a name and value.
 
 4. What does it mean when an element has semantic meaning? And structural meaning? 
-An element with semantic meaning convey meaning by their type while not necessarily affecting the structure of a page; e.g. “the strong tags” shows an element has strong importance and emboldens the text. An element with structural meaning innately impacts the structure of a webpage while not necessarily conveying meaning; e.g. “the bold tags” emboldens a text while not exactly relaying the importance of the element to the webpage.
+An element with semantic meaning conveys meaning by their type while not necessarily affecting the structure of a page; e.g. <strong> shows an element has strong importance and emboldens the text. An element with structural meaning innately impacts the structure of a webpage while not necessarily conveying meaning; e.g. <b> emboldens a text while not exactly relaying the importance of the element to the webpage.
 
 5. What is the default behavior when submitting a HTML form? 
 The default behavior of an HTML form uses the get attribute, in which the values from the form are attached to the end of the URL specified in the action attribute of the form.
