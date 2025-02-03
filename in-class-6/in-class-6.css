@@ -1,0 +1,27 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 700px;
+    gap: 50px;
+    margin: auto;
+}
+
+.top-container{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.mid-container{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-container{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
