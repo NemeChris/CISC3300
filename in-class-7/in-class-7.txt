@@ -1,0 +1,8 @@
+1. CSS framework 
+
+2. Bootstrap Components
+
+3. Responsive Design 
+
+4. Meta tag with viewport attributes 
+
