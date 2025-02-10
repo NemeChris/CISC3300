@@ -1,0 +1,5 @@
+1. interpreter, interpreted
+2. dynamic
+3. Type juggling
+4. Non-primitive
+5. Strict equal (===)
