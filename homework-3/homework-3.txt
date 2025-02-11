@@ -1,0 +1,6 @@
+1. Both Flexbox and CSS Grid are layout systems, meaning they set rules and standards for how a layout should flow and position elements in a more systematic way. However, Flexbox is a one-dimensional model, while CSS Grid is a two-dimensional layout system.
+
+
+
+2. Responsive design is the creation of dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view. It is implemented using flexible grids and layouts, CSS Media queries, meta tag with viewport attributes, etc.
+

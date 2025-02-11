@@ -1,0 +1,47 @@
+@media screen and (max-width: 500px) {
+    .parent-container{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+    .child-one{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    .child-two{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .child-three{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .parent-container{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
+    }
+    .child-one{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+    .child-two{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .child-three{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+}
