@@ -1,0 +1,5 @@
+Higher order
+Functional
+Dot notation or Bracket notation
+short-circuit
+Declarative programming
