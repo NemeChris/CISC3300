@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Number 6 </title>
+    </head>
+    <body>
+        <script>
+            const cats = [
+                {
+                    name: 'Charlie',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Lily',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Coco',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Oreo',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Luna',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Milo',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Lola',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Leo',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Willow',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Bella',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Max',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Cleo',
+                    adoptionStatus: 'available'
+                },
+                {
+                    name: 'Lucy',
+                    adoptionStatus: 'not-available'
+                },
+                {
+                    name: 'Daisy',
+                    adoptionStatus: 'available'
+                },
+            ];
+            
+            //Number 6
+            console.log('Number 6');
+            let availableCats = cats.filter(checkStatus);
+
+            function checkStatus(myCat){
+                if(myCat.adoptionStatus === 'available'){
+                    return myCat;
+                }
+            }
+
+            let goodCats = availableCats.map(getCats);
+            function getCats(availableCat){
+                return availableCat.name;
+                }
+
+            console.log(goodCats);
+
+
+            //Number 7
+            console.log('Number 7');
+            const randomNum = (Math.random() * 10);
+            const myTernary = randomNum > 5 ? 'greater than five!' : 'less than five!';
+
+            console.log(randomNum);
+            console.log(myTernary);
+
+            //Number 8
+            console.log('Number 8');
+            for(let i = 0; i < cats.length; i++){
+                for(let property in cats[i]){
+                    console.log(cats[i][property]);
+                }
+            }
+
+
+            //Number 9
+            console.log('Number 9');
+            if(1 == '1'){
+                console.log(true);
+            }else{
+                console.log(false);
+            }
+
+            if(1 === '1'){
+                console.log(true);
+            }else{
+                console.log(false);
+            }
+
+
+            //Number 10
+            console.log('Number 10');
+            let catNames = cats.map(getCatNames);
+            
+            function getCatNames (catName){
+                return catName.name + ' is cute';
+            }
+
+            catNames.forEach(printData);
+            function printData(newString){
+                console.log(newString);
+            }
+        </script>
+    </body>
+</html>
