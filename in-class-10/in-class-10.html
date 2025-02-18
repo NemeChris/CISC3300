@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In Class 10</title>
+    </head>
+    <body>
+        <div id="my-div">
+            <p>initial text</p>
+        </div>
+        <script>
+            let el = document.getElementById('my-div');
+
+            function whenClicked(){
+                this.textContent = 'added text!';
+                this.setAttribute('style', 'background-color: yellow')
+            }
+            el.addEventListener('click', whenClicked, false);
+        </script>
+    </body>
+</html>
