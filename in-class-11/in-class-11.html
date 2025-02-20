@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In Class 11</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <button id="myButton">Button</button>
+        <script>
+            $('#myButton').on('click', function () {
+                $.ajax({
+                    url: `localhost/cats`,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+            });
+    </script>
+    </body>
+</html>

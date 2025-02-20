@@ -1,0 +1,6 @@
+jQuery
+jQuery
+AJAX
+HTTP(Hyper Text Transfer Protocol)
+JSON(Javascript Object Notation)
+Application Programming Interface(API)
