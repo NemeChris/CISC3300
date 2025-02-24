@@ -1,0 +1,4 @@
+1. execution context
+2. hoisting
+3. closures
+4. encapsulation
