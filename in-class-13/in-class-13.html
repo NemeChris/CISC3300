@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In Class 13</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <p>My HTML</p>
+        <button>Click Here</button>
+        <script>
+            $('button').on('click', function(data){
+                $.ajax({
+                    url: `http://localhost/mine`,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        $afterBody = '';
+                        $afterBody += '<p>Name: ' + data.Name + '</p>';
+                        $afterBody += '<p>Type: ' + data.Type + '</p>';
+
+                        $('body').after($afterBody);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
