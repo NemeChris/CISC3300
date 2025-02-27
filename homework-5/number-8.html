@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework 5</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li id="one">Item 1</li>
+            <li id="two">Item 2</li>
+            <li id="three">Item 3</li>
+            <li id="four">Item 4</li>
+            <li id="five">Item 5</li>
+        </ul>
+        <script>
+            $('#one').on('click', function(){
+                $(this).css("color", "blue");
+            });
+            $('#two').on('click', function(){
+                $(this).css("color", "yellow");
+            });
+            $('#three').on('click', function(){
+                $(this).css("color", "pink");
+            });
+            $('#four').on('click', function(){
+                $(this).css("color", "gold");
+            });
+            $('#five').on('click', function(){
+                $(this).css("color", "purple");
+            })
+        </script>
+    </body>
+</html>

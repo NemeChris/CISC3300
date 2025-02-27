@@ -1,0 +1,21 @@
+1. DOM (Document Object Model) is a programming interface web documents, It represents the document as nodes and objects, allowing programs to change the document structure, style, and content. The DOM tree is a model of the webpage and its stored in the browsers' memory with four types of nodes: document node, element nodes, attribute nodes, and text nodes.
+
+2. XSS (Cross Site Scripting) attacks are attacks are incidents where a malicious user adds code to a website, with the intention of stealing the victims' accound or a performing a malicious action not originally intended by the website. It works by a malicious user injecting code ot an input that is eventually generated as HTML that could be potentially run for different users. To guard against them, the site-creator must be careful with what content is treated as HTML; input froa user should very rarely have the option to be shown; and the input should be validates, stripped of potential malicious intent by the removal of tags, escaping characters, etc.
+
+3. Events are "things" that happen to HTML elements that trigger code that we can react to; they are created by interactions and fired by the browser/HTML.
+Kinds of events that can be responded to include UI (User Interface) events, keyboard events, mouse events, focus events, form events, and mutation events.
+
+4. DOM eventListerner are a recent approach to handling events, with the ability to deal with multiple functions at a time. It sets up a function that will be called when the specified event is delivered to the target, and it listens for the event by name. Its expected parameters are the event type, a listener (usually a function), and a boolean indicating propagation of events (capture or bubbling).
+
+
+5.jQuery is a lightweight, "write less, do more," JavaScript library that makes it easier to use JavaScript on website. It is used because it simplifies HTML, DOM manipulation, event handling, CSS animations, and AJAX by shortening syntax and increasing web developer productivity. It is loaded via a CDN akin to bootstrap implementation.
+
+6. AJAX (Asynchronous JavaScript and XML) is a tool that allows webpages to be updated aynschronously by exchanging data with a web server behind the scenes, meaning it is possible to update parts of a webpage without reloading the whole page. JSON is a text-based data format following JavaScript object syntax that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays or other serializable values. 
+HTTP (Hyper Text Transfer Protocol) is a protocol for fetching resources such as HTML documents or JSON data.
+GET - should only ever retrieve data.
+POST - submits an entity to the specified resource, often causing a change in state or side effects on the server - usually creating a new resource.
+PUT - method replaces all current representations of the target resource with the request payload - update everything for a resource.
+PATCH - partially modify a resource - not really used much, put is more common for modifying resources.
+DELETE - delete a resource.
+
+

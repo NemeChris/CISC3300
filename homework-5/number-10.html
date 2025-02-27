@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number 10</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            #new{
+                visibility: hidden;
+                margin: 20px;
+                border: 3px solid purple;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="submitForm">
+            <p>
+            <label id="name">Name</label>
+            <input name="Username" type="text"/> 
+            </p>
+            <p>
+            <label id="password">Password</label>
+            <input name="key" type="password"/>
+            </p>
+            <p>
+            <label id="comment">Additional Comments</label>
+            <textarea id="extraComment"></textarea>
+            </p>
+            <input name="submitButton" type="submit"/>
+        </form>
+        <div id="new"></div>
+        <script>
+           $('#submitForm').on('submit', function(e){
+            $div = $('#new');
+            e.preventDefault();
+            $.ajax({
+                url: `http://localhost/form`,
+                type: "POST",
+                dataType: "json",
+                success: function(data){
+                    $answer = '';
+                    $answer += '<p>' + data.message + '</p>';
+                    console.log(data.message);
+                    $div.append($answer);
+                    $div.css("visibility", "visible");
+                }
+            });
+           });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "Catalogue": [
+    {"Name": "Cyber Nexus", "Price": "$12.99", "Type": "Digital"},
+    {"Name": "Nomad", "Price": "$15.99", "Type": "Physical"},
+    {"Name": "With Us 2", "Price": "31.99", "Type": "Physical"},
+    {"Name": "Side Mecha", "Price": "$19.99", "Type": "Digital"},
+    {"Name": "Run 3", "Price": "52.99", "Type": "Digital"}
+    ]
+}

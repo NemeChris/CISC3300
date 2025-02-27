@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number 9</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            .child{
+                top: 500px;
+                margin-left: 100px;
+                color: red;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="button1">Button</button>
+        <div id="myDiv"></div>
+        <script>
+            $('#button1').on('click', function(){
+                $.ajax({
+                    url: `http://localhost/mine`,
+                    type: "GET",
+                    dataType: "json",
+                    success: function(data){
+                        //console.log(data);
+                        $divElem = '';
+                        for(let i = 0; i < data.length; i++){
+                            $divElem = '';
+                            $divElem += '<div class = "child">'; //need a div for each child
+                            $divElem += '<p>Name: ' + data[i].Name + '</p>';
+                            $divElem += '<p>Price: ' + data[i].Price + '</p>';
+                            $divElem += '<p>Type: ' + data[i].Type + '</p>';
+                            $divElem += '</div>';
+                            // $divElem.css("color", "blue");
+                            $('#myDiv').append($divElem);
+                        }
+
+                        //$('body').after($divElem);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
