@@ -1,0 +1,5 @@
+1. arrow syntax (->)
+2. visibility
+3. inheritance
+4. polymorphism
+5. namespaces
