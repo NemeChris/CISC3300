@@ -1,0 +1,25 @@
+1. Hoisting is the creation of new variable, functions, and arguments upon entering a new execution context. Closures is the ability of a function to know variables and functions that are declared in its outer scope.
+
+2. PHP (PHP: Hypertext Preprocessor) is an interpreted, server-side programming language used to build webpages. Server Side scripting languages process user input and interact with other servers.
+
+3. Similarities:
+Both are interpreted languages
+Both are weakly typed
+Both support object-oriented programming
+
+Differences:
+Javascript operates on an event-driven model, while PHP is more procedural (allowing linear task execution).
+
+Javascript runs in a single-threaded environment, using an event loop to handle asynchronous operations without multi-threading; while PHP follows a multi-threaded model.
+
+Javascript has automatic garbage collection to reclaim memory from objects no longer in use, while PHP uses reference counting to free up memory.
+
+4. PHP supports excellent rapid devlopment, since the language can be easily mixed with HTML and thus requires less configuration.
+
+PHP has wide compatibility and works seamlessly with many web servers and databases
+
+PHP is widely supported by hosting providers, making it cost-effective for deploying web applications.
+
+5. Both echo and var_dump are used to output information pertaining to a detatype; however, echo outputs the contents of a datatype, while var_dump outputs the contents and specific type of a datatype.
+
+
