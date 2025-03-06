@@ -1,0 +1,5 @@
+1. superglobals
+2. $_GET 
+3. escaping data
+4. MVC
+5. Restful APIs
