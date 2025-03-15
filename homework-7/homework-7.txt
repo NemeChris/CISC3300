@@ -1,0 +1,24 @@
+1. A class is a definition of properties and methods that serve as templates for creating objects. An object is an instance of a class. Object-oriented Programming is a programming style that bases design of code around objects and has 4 main principles: abstraction, inheritance, encapsulation, and polymorphism.
+
+2. Abstract classes are used to create templates that dictate the structure of its derived class(es), without the risk of instantiating the original abstract class. It is used to lay out a design for its derived class(es) to follow.
+
+3. Superglobals are variables that are available in all scopes throughout a script. Examples of data stored in them: $_GET (stores data passed to script by query string), $_POST (stores data passed to script by HTTP POST method), $_SERVER(stores information such as headers, paths, and script locations).
+
+4. Two steps in setting up and using a class via namespaces
+i. Define a namespace in the class to be used
+ii. In the place you want to use the class, there are 2 options (typing out the full namespace everytime you want to use the class or importing the class into the current namespace with the "use" keyword.
+
+5. MVC is an architectual pattern that separates an application into three main logical components -- Model, View, and Controller -- where each component is built to handle specific development aspects of an application, isolating the business logic and presentation layer from each other.
+
+Model Component: It corresponds to all data-related logic that the user works with. It can add to or retrieve data from the database, transferring required data back to the controller. Additionally, it can represent data being transferred between the View and Controller components.
+
+Controller Component: It serves as an intermediary between the View and Model Components. It is concerned with processing all the business logic and incoming requests, manipulating the data using the Model Component, and interacting with the View Component to render the final output. It also includes routing -- using URLs and HTTP verbs to select the Controller methods to be run.
+
+View Component: It is used for all the UI logic of the application, as it generates a user interface for the user. The specifics of the View Component are created by the data collected by the Model Component (which is sent to the View Component through the Controller, not Model Component itself).
+
+6.
+a. URI: /users		HTTP verb: GET
+b. URI: /users/userID	HTTP verb: GET
+c. URI: /users		HTTP verb: POST
+d. URI: /users/userID	HTTP verb: PATCH
+e. URI: /users/userID	HTTP verb: DELETE

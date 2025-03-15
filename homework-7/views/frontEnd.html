@@ -3,29 +3,56 @@
     <head>
         <title>Homework 7</title>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            #response{
+                font-weight: bold;
+                font-style: italic;
+                font-size: 20px;
+                width: fit-content;
+            }
+
+            input{
+                margin-bottom: 10px;
+                margin-top: 5px;
+            }
+        </style>
     </head>
     <body>
         <div id="container">
             <form id="my-form">
                 <label>Title</label>
-                <input type="text" name="title"/>
+                <input type="text" name="title" id="title"/>
                 <br>
                 <label>Description</label>
-                <textarea name="description"></textarea>
+                <textarea name="description" id="description"></textarea>
                 <br>
                 <input type="submit" name="submit-button" value="Submit" />
             </form>
         </div>
+        <div id="response">
+        </div>
         <script>
             $("#my-form").on('submit', function(e){
                 e.preventDefault();
+                var title = $('#title').val();
+                var description = $('#description').val();
+
+                const data = {
+                    title,
+                    description
+                }
+
                 $.ajax({
                     url: `http://localhost/work`,
                     type: "POST",
                     dataType: "json",
+                    data: data,
                     success: function(message){
-                        $myDiv = $("#container");
-                        $myDiv.append(message);
+                        console.log(message);
+                        $myDiv = $("#response");
+                        $inHTML = '<p>' + message + '</p>';
+                        $myDiv.append($inHTML);
+
                     }
                 });
             });

@@ -2,13 +2,17 @@
     use Controller\Controller;
     class Router{
         public function handleRoutes(){
-            $uri = strtok($_SERVER["REQUEST_URI"], '?');
-            $uriArray = explode("/", $uri);
-            $this->userRoutes();
+            $url = strtok($_SERVER['REQUEST_URI'], '?');
+            $uriArray = explode("/", $url);
+            $this->userRoutes($uriArray);
         }
 
-        public function userRoutes(){
-            if($_SERVER["REQUEST_METHOD"] === "POST" && $uriArray[1] === "work"){
+        public function userRoutes($uriArray){
+            if($uriArray[1] === '' && $_SERVER['REQUEST_METHOD'] === 'GET'){
+                require '../views/frontEnd.html';
+            }
+
+            if($uriArray[1] === 'work' && $_SERVER['REQUEST_METHOD'] === 'POST'){
                 $control = new Controller();
                 $control->checkTitle();
             }

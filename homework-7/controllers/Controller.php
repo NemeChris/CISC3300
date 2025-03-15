@@ -1,37 +1,44 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
-    
+
+    //echo 'Reached Controller';
     namespace Controller;
+    header("Access-Control-Allow-Origin: *");
     class Controller{
+        public bool $okTitle;
+        public bool $okDescription;
+
         public function checkTitle(){
             $title = $_POST["title"];
             if(strlen($title) > 3){
-                $okTitle = true;
+                $this->okTitle = true;
             }else{
-                $okTitle = false;
+                $this->okTitle = false;
             }
-            $this->CheckDescription();
+            $this->checkDescription();
         }
 
         public function checkDescription(){
             $description = $_POST["description"];
             if(strlen($description) > 10){
-                $okDescription = true;
+                $this->okDescription = true;
             }else{
-                $okDescription = false;
+                $this->okDescription = false;
             }
             $this->returnMessage();
         }
 
         public function returnMessage(){
-            if($okTitle && $okDescription){
+            if($this->okTitle && $this->okDescription){
                 $message = "Title and Description are good!";
-            }else if (!$okTitle && $okDescription){
+            }
+            if (!$this->okTitle && $this->okDescription){
                 $message = "Title must be more than 3 characters";
-            }else if ($okTitle && !$okDescription){
-                $message = "Description must be more than 3 characters";
-            }else{
-                $message = "Title and Description must be more than 3 characters";
+            }
+            if ($this->okTitle && !$this->okDescription){
+                $message = "Description must be more than 10 characters";
+            }
+            if(!$this->okTitle && !$this->okDescription){
+                $message = "Title and Description must be more than 3 & 10 characters respectively";
             }
             echo json_encode($message);
         }
