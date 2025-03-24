@@ -1,0 +1,5 @@
+1. relationships
+2. One-to-many
+3. join
+4. left join
+5.Aggregate fucnctions 
