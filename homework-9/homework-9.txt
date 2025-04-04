@@ -1,0 +1,10 @@
+1. In SQL, relationships are the established associations between two tables; they are based on common fields from more than one table, often involving primary and foreign keys. “Joins” are how relationships are implemented in SQL; joins allow users to request data from more than one table.
+
+2. Joins are used to implement relationships; primary and foreign keys describe how data in one table can relate to data in another table – this is achieved using the “on” keyword.
+
+3. PDO is a built-in class, packaged with PHP, that makes it easy to interact with databases; it represents and manages a user's connection to the database, as it allows PHP to take SQL input, returning the results from the database to be stored as variables. DSN is a string that contains information about a user's connection to the database.
+
+4. Prepared statements are parameterized and reusable SQL queries which force the developer to write the SQL command and the user-provided data separately. They are needed to safely execute SQL commands and prevent SQL injection hacks.
+
+5. A .env file stores environment variables, often used to hold sensitive information like API keys or database credentials, keeping them separate from the source code.
+

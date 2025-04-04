@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Details</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <style>
+            .detail-container{
+                display: block;
+                border: 3px solid black;
+            }
+        </style>
+        <!-- <link rel="stylesheet" type="text/css" href="../../assets/styles/games-view.css" /> -->
+    </head>
+    <body>
+        <div class="detail-container">
+        </div>
+        <script>
+            $(document).ready(function () {
+                // console.log(window.location.pathname)
+                const urlArray = window.location.pathname.split("/")
+                console.log(urlArray)
+                const id = urlArray[2]
+                $.ajax({
+                    url: `http://localhost/api/games/${id}`,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data)
+                        if (data) {
+                            $('.detail-container').append(`
+                                <h2>Game Details:</h2>
+                                    <p>
+                                        Name: ${data.name}
+                                    </p>
+                                    <p>
+                                        Release Year: ${data.year}
+                                    </p>
+                            `);
+                        } else {
+                            $('.detail-container').append(`
+                                <h2>Game Not Found</h2>
+                            `);
+                        }
+                    }
+                });
+            })
+        </script>
+
+    </body>
+</html>

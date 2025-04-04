@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Games</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../assets/styles/games-view.css" />
+    </head>
+    <body>
+        <form id="search-form">
+            <textarea id="search-content" placeholder="Search for game here!"></textarea>
+            <button id="search-button">Search</button>
+        </form>
+        <div class="secondary">
+            <div id="games-container"></div>
+        </div>
+    </div>
+        <script>
+            $('#search-form').on('submit', function(e){
+                e.preventDefault();
+                const myUrl = $('#search-content').val() ? `http://localhost/api/games?name=${$('#search-content').val()}` : `http://localhost/api/games`;
+                $.ajax({
+                    url: myUrl,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                            $('#games-container').html('')
+                            console.log(data)
+                            $.each( data, function( key, value ) {
+                                $('#games-container').append(`
+                                    <div>
+                                       <a href="/games/${value['id']}">${value['name']}</a>
+                                    </div>
+                                `)
+                            });
+                        }
+                });
+            });
+        </script>
+    </body>
+</html>
