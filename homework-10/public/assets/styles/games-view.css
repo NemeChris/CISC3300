@@ -1,0 +1,119 @@
+*{
+    background-color: #a0d2eb;
+    color: white;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 75px;
+}
+
+.games-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.individual-game{
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    margin-bottom: 20px;
+    width: 200px
+}
+
+.edit-button{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(247, 197, 104);
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.delete-button{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(172, 24, 24);
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.add-game{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(31, 125, 3);
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.submit-button{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(20, 105, 223);
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.home-button a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 30px 30px 30px 30px;
+}
+
+#form-id{
+    width: 500px;
+}
+
+#game-delete{
+    font-size: 30px;
+}
+
+#delete-game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+}
+
+#search-form button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    margin-left: 0px;
+    font-size: 20px;
+}
